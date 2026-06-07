@@ -1,0 +1,95 @@
+body{
+    background-color: rgb(65, 77, 93);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.card{
+    background-color: rgb(229, 247, 255);
+    border-radius: 25px;
+    height: 580px;
+    width: min(400px, 90%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease-in-out;
+
+}
+#pic{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    box-shadow: 5px 10px rgb(200, 232, 246);
+    transition: all 0.3s ease-in-out;
+}
+#name , #it , #descrip{
+    font-family: Andale Mono, monospace;
+    margin: 0px 15px 5px ;
+    transition: all 0.3s ease-in-out;
+}
+#name{
+    margin:10px 15px 5px ;
+    color:  rgb(10, 99, 188);
+    word-spacing: 0%;
+}
+#contact{
+    background-color:rgb(44, 80, 117) ;
+    color: rgb(229, 247, 255);
+    border-radius: 25px;
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    box-shadow: 5px 10px rgb(200, 232, 246);
+    font-family: Andale Mono, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+#contact:hover{
+    background-color: rgb(229, 247, 255);
+    color: rgb(44, 80, 117);
+    transition-timing-function: ease-in-out;
+}
+
+#descrip{
+    margin: 0px 50px 10px;
+    color: black;
+    word-spacing: 0.5px;
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: Andale Mono, monospace;
+    font-size: 16px;
+    text-transform: uppercase;
+
+}
+
+.card:hover {
+    background-color:rgb(10, 99, 188);
+    transition-timing-function: ease-in-out;
+    transform: scale(1.05);
+
+}
+.card:hover #name{
+    color: rgb(229, 247, 255);
+}
+.card:hover #it{
+    color: rgb(229, 247, 255);
+}
+.card:hover #descrip{
+    color: rgb(229, 247, 255);
+}
+.card:hover #pic{
+    box-shadow: 5px 10px rgb(54, 54, 54);
+}
+.card:hover #contact{
+    box-shadow: 5px 10px rgb(54, 54, 54);
+}
